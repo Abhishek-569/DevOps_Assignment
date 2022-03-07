@@ -79,3 +79,49 @@ Amazon ECR is a fully managed container registry offering high-performance hosti
 Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
 
 AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+
+# Stage 1: Dockerization
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/dockerfile.PNG)
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step1.1.PNG)
+I have  build a docker image of flask application ready to deploy complete with all libraries and dependencies using Dockerfile.  
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step1.4.PNG)
+I have  provided a environment variable in our image which can take a message and display it on our website. Environment variable makes it easy to change our message with each container without changing the base image everytime.
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/Capture.PNG)
+Than we have uploaded our image on our registry in  AWS ECR to make a backup of it on cloud. AWS ECR provides us with a URI which can be used by anyone around the world to access our image easily .
+
+Our website with default Value of environment variable:
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step1.3.PNG)
+
+Our Website with environment variable value changed  with docker run command
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step1.5.PNG)
+
+# Stage 2: CI/CD Pipeline
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step2.PNG)
+For our CI/CD pipeline we have used Gitlab to automatically build a new image and push the same in AWS ECR automatically.
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step1.8.PNG)
+We have authenticated with our registery and than ploaded the image on AWS ECR
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step1.9.PNG)
+We Have renamed our image and pushed it to AWS ECR.
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/1.PNG)
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step1.10.PNG)
+Gitlab runner has automatically up updated docker image on AWS ECR with latest image.
+
+# Stage 3: Deployment to ECS
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/last.PNG)
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/last2.PNG)
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/last3.PNG)
+We have used gitlab-runner to setup a workflow which would deploy the given ECR image to ECS on Fargate.
+
+
+
+
+
+![Git]()
