@@ -1,0 +1,17 @@
+before_script:
+        - docker info
+
+
+
+
+buildjob:
+    stage : build
+    tags:
+    - dockerflaskapp
+    script:
+    - docker build --build-arg env_var_name=another_val -t abhi/flaskapp:latest .
+    - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 174454556418.dkr.ecr.ap-south-1.amazonaws.com
+    - docker tag abhi/flaskapp:latest 174454556418.dkr.ecr.ap-south-1.amazonaws.com/abhi/flaskapp:latest
+    - docker push 174454556418.dkr.ecr.ap-south-1.amazonaws.com/abhi/flaskapp:latest
+    - aws ecs update-service --region ap-south-1 --cluster flaskcluster --service flaskapp-service --force-new-deployment
+
