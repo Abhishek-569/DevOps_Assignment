@@ -59,7 +59,7 @@ Docker is a programme that uses containers to make it easier to construct, deplo
 Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
 
 ## GitLab
-![Git](https://techcrunch.com/wp-content/uploads/2015/09/gitlab.png?w=711)
+![Git](https://pbs.twimg.com/profile_images/694241544899923968/Yj5sO9P4_400x400.png)
 
 GitLab is a web-based Git repository that provides free open and private repositories, issue-following capabilities, and wikis. It is a complete DevOps platform that enables professionals to perform all the tasks in a project—from project planning and source code management to monitoring and security.
 
