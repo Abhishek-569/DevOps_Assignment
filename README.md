@@ -1,5 +1,7 @@
 # DevOps_Assignment
 Gitlab repository-  https://gitlab.com/akabhishek4444/flaskappdeploy
+
+
 AWS website link-  http://ec2co-ecsel-1esn516bwsgo1-1342418789.ap-south-1.elb.amazonaws.com:5000/
 
 In this project I have completed the following stages:
@@ -144,5 +146,10 @@ I have setup a Load balancer and autoscaling on our website to ensure zero downt
 ## Script 
 ![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/dockerfile1.PNG)
 This file has updated the value of environment variable and setup the flask in our container
+
+# what I learned from this project
+I learned about various new applications and services and how to use them  such as AWS ECR , AWS ECS and Flask. I learned how to deploy CI/CD workflow on AWS using gitlab-runner. I also lerned how to update the image on ECR and deploy the same on ECS Fargate. I also learned the benefit of auto scaling and load balancer to manage the traffic on website.
+It was a good experience and I learned a lot from facing many difficults and problems while making this project.
+
 ## Repository on Gitlab
 link =https://gitlab.com/akabhishek4444/flaskappdeploy
