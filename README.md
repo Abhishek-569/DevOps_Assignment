@@ -1,4 +1,5 @@
 # DevOps_Assignment
+https://gitlab.com/akabhishek4444/flaskappdeploy
 In this project I have completed the following stages:
 
 Stage 1: Dockerization
@@ -120,8 +121,26 @@ Gitlab runner has automatically up updated docker image on AWS ECR with latest i
 ![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/last3.PNG)
 We have used gitlab-runner to setup a workflow which would deploy the given ECR image to ECS on Fargate.
 
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/ecs1.PNG)
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/ecs.PNG)
+Our ECS cluster running on AWS ECS
+
+## Final Website on Cloud
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/websitemain.PNG)
+Original Image 
+
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step3.1.PNG)
+After the change new updated image on AWS ECS
+
+# BONUS
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/bonus.PNG)
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/bonus3.PNG)
+I have setup a Load balancer and autoscaling on our website to ensure zero downtime on our website due to increased traffic.
 
 
-
-
-![Git]()
+## Script 
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/dockerfile1.PNG)
+This file has updated the value of environment variable and setup the flask in our container
+## Repository on Gitlab
+link =https://gitlab.com/akabhishek4444/flaskappdeploy
