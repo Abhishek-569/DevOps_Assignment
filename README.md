@@ -74,7 +74,8 @@ GitLab runner is a build instance which is used to run the jobs over multiple ma
 Amazon ECR is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.
 
 ## AWS ECS Fargate (Elastic Container Services)
-![Git](https://miro.medium.com/max/626/1*RmiGt6GAWf4pkO9ohOnRaQ.png)
+![Git](https://digital.ai/sites/default/files/pictures/styles/maxwidth_300/public/pt_logos/amazon-ecs.png?itok=4kq9I_sN)
+
 Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
 
 AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
