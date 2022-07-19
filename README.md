@@ -2,7 +2,6 @@
 Gitlab repository-  https://gitlab.com/akabhishek4444/flaskappdeploy
 
 
-AWS website link-  http://ec2co-ecsel-1esn516bwsgo1-1342418789.ap-south-1.elb.amazonaws.com:5000/
 
 In this project I have completed the following stages:
 
