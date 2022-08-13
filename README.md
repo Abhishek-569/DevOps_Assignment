@@ -133,7 +133,7 @@ Our ECS cluster running on AWS ECS
 ![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/websitemain.PNG)
 Original Image 
 
-![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step3.1.PNG)
+![Git](https://github.com/Abhishek-569/DevOps_Assignment/blob/main/images/step2.1.PNG)
 After the change new updated image on AWS ECS
 
 # BONUS
